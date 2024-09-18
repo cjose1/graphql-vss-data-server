@@ -41,7 +41,7 @@ export SUDO=""
 export CLEAN_BUILD="false"
 export CMAKE_BUILD_TYPE=Release
 
-export CMAKE_OPTIONS_STR="-GNinja -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_C_COMPILER=/usr/bin/clang"
+export CMAKE_OPTIONS_STR="-GNinja -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_C_COMPILER=/usr/bin/clang --toolchain ~/opt/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi4-linux-gnu.toolchain.cmake "
 export CLONE_SHALLOW_SINGLE_BRANCH_STR="--single-branch --depth 1"
 
 export SOURCE_CODE=covesa
