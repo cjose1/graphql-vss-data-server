@@ -14,7 +14,7 @@ services via WebSocket, so that GraphQL clients make operations through the netw
 
 Much of this code was generated with the help of [VSS to GraphQL Schema](https://github.com/COVESA/vss2graphql_schema) and [GraphQL Schema to C++ Code Generator](https://github.com/COVESA/graphql_schema2cpp_codegen).
 
-## Table of Contents
+## Table of Contents 
 
 
 * [C++ GraphQL VSS Data Server](#c-graphql-vss-data-server)
