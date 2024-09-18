@@ -22,8 +22,8 @@ export DLT_DAEMON_VERSION=2.18.5
 ARCHTYPE="$(uname -p)"
 export ARCHTYPE
 
-export LIBBOOST_MIN=1.66
-export LIBBOOST_MAX=1.74
+export LIBBOOST_MIN=1.71
+export LIBBOOST_MAX=1.71
 export BOOST_RELEASE=https://boostorg.jfrog.io/artifactory/main/release/1.71.0/source/boost_1_71_0.tar.gz
 export CPPGRAPHQLGENTAG=v3.6.0
 export DEFAULT_BRANCH=master

@@ -72,7 +72,7 @@ show_help() {
     echo "--help, -h                          Displays help."
 }
 
-BUILD_SERVER_LIBS="1"
+BUILD_SERVER_LIBS=""
 
 DOWNLOAD_IN_ADVANCE=""
 
@@ -197,16 +197,16 @@ cd "$DEV_DIR"
 
 "$SELF_ROOT_DIR"/lib/build_tools.sh || runtime_error
 "$SELF_ROOT_DIR"/lib/cmake.sh || runtime_error
-"$SELF_ROOT_DIR"/lib/jwt.sh || runtime_error
-"$SELF_ROOT_DIR"/lib/websocketpp.sh || runtime_error
-"$SELF_ROOT_DIR"/lib/googletest.sh || runtime_error
+#cjose1 "$SELF_ROOT_DIR"/lib/jwt.sh || runtime_error
+#cjose1 "$SELF_ROOT_DIR"/lib/websocketpp.sh || runtime_error
+#cjose1 "$SELF_ROOT_DIR"/lib/googletest.sh || runtime_error
 
 #shellcheck source=scripts/install_dependencies/lib/libboost.sh
 source "$SELF_ROOT_DIR"/lib/libboost.sh
 echo "$DEV_DIR"
-"$SELF_ROOT_DIR"/lib/dlt.sh || runtime_error
+#cjose1 "$SELF_ROOT_DIR"/lib/dlt.sh || runtime_error
 
-"$SELF_ROOT_DIR"/lib/cppgraphqlgen.sh || runtime_error
+#cjose1 "$SELF_ROOT_DIR"/lib/cppgraphqlgen.sh || runtime_error
 
 if [[ $INSTALL_COMMONAPI_DBUS == "true" ]]; then
     "$SELF_ROOT_DIR/lib/$SOURCE_CODE/commonapi-dbus-runtime.sh" || runtime_error
